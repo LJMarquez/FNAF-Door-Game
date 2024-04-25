@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  background-image: url(https://drive.google.com/uc?export=view&id=1TZ5-Ht64KV2B1K517Dmo1kkuvUyvYng9);
+  background-image: url(./assets/fnaf-office.jpg);
   /* background-color: black; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -213,8 +213,8 @@ font-size: 1.5rem;
 </head>
 <body>
     <div id="main">
-        <img id="freddy-face" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9d2f588-8133-41d0-bdcb-50972bca9052/dce15om-f3b5216d-6d3e-45af-b450-210f58e4d6bd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5ZDJmNTg4LTgxMzMtNDFkMC1iZGNiLTUwOTcyYmNhOTA1MlwvZGNlMTVvbS1mM2I1MjE2ZC02ZDNlLTQ1YWYtYjQ1MC0yMTBmNThlNGQ2YmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.z1kzwYJ0dDugjjqkg4WVmsn5zN6wTbyCPrVk-5Z-2L8"/>
-          <img id="cupcake" src="https://drive.google.com/uc?export=view&id=167jU4tRZjDfYf0GzfkWlTogu2idgeh9f"/>
+        <img id="freddy-face" src="./assets/golden-freddy-face.png" alt="golden freddy face"/>
+          <img id="cupcake" src="./assets/fnaf-cupcake.png" alt="cupcake"/>
           <h1 id="welcome">Welcome to the Night Shift</h1>
           <input id="name-input" type="text" placeholder="Type your name"/>
           <button id="submit-button" type="button" onclick="displayName()">Submit</button>
@@ -231,13 +231,13 @@ font-size: 1.5rem;
 
             <button id="left-button" type="button" onclick="pickDoor('left')">PICK LEFT DOOR</button>
             <button id="right-button" type="button" onclick="pickDoor('right')">PICK RIGHT DOOR</button>
-            <img id="left-door" src="https://lh3.googleusercontent.com/6ptGPYkWp94gw1-RrE4RE9s5nxhHOQI9a194Lz0om-AJjeX-Zw3KAFD_ogEzQuGN29tq2jvMTwow3QEOQzyfDUY"/>
-            <img id="right-door" src="https://lh3.googleusercontent.com/6ptGPYkWp94gw1-RrE4RE9s5nxhHOQI9a194Lz0om-AJjeX-Zw3KAFD_ogEzQuGN29tq2jvMTwow3QEOQzyfDUY"/>
+            <img id="left-door" src="./assets/door.png"/>
+            <img id="right-door" src="./assets/door.png"/>
             <p id="game-result"></p>
             <div id="container"><button id="try-again" type="button" onclick="resetGame()">Try Again?</button></div>
             <br>
             <img id="jumpscare" src=""/>
-            <img id="win" src="https://media.tenor.com/jkzl1VQ6OWYAAAAC/fnaf-6am.gif"/>
+            <img id="win" src="./assets/fnaf-6am.gif"/>
         </div>
         </div>
     <script>
@@ -275,19 +275,19 @@ function pickJumpscare() {
   let randNum = (Math.floor(Math.random()*5))
   switch (randNum) {
     case 0:
-      jumpscare.src = "https://pa1.aminoapps.com/6903/c266ae8d14cb0111c1c70e444a6f41c943636bb2r1-320-180_00.gif";
+      jumpscare.src = "./assets/freddy-jumpscare.gif";
       break;
     case 1:
-      jumpscare.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3dd777df-40ac-4ec7-95eb-78bd9214424e/dd0pu1u-42c8f8f2-ddd2-4cb1-af49-8124927c4a1f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkZDc3N2RmLTQwYWMtNGVjNy05NWViLTc4YmQ5MjE0NDI0ZVwvZGQwcHUxdS00MmM4ZjhmMi1kZGQyLTRjYjEtYWY0OS04MTI0OTI3YzRhMWYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Pgh7574l3DHemhT-dElgz1HNMXm6mG0nMILe7C5r7Jw";
+      jumpscare.src = "./assets/chica-jumpscare.gif";
       break;
     case 2:
-      jumpscare.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3dd777df-40ac-4ec7-95eb-78bd9214424e/ddfokls-dfb65289-96e4-457b-81c5-80ec1f39ecc3.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkZDc3N2RmLTQwYWMtNGVjNy05NWViLTc4YmQ5MjE0NDI0ZVwvZGRmb2tscy1kZmI2NTI4OS05NmU0LTQ1N2ItODFjNS04MGVjMWYzOWVjYzMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uKR-lKqXXbk7L24HZ4jYgOgUNRiWESrU3YafWH8TVt4";
+      jumpscare.src = "./assets/foxy-jumpscare.gif";
       break;
     case 3:
-        jumpscare.src = "https://i.redd.it/r87il8mo1y461.gif";
+        jumpscare.src = "./assets/bonnie-jumpscare.gif";
         break;
     case 4:
-        jumpscare.src = "https://i.redd.it/dobcsttumcl31.gif";
+        jumpscare.src = "./assets/golden-freddy-jumpscare.gif";
         break;
   }
 }
